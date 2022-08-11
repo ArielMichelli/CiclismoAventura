@@ -1,2 +1,2 @@
 # CiclismoAventura
-TP final para el curso de Front End CoderHouse 
+Trabajo Práctico final para el curso de Front End CoderHouse 
