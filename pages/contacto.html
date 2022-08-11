@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header-contacto">
+        <nav class="navbar nav-colorido">
+            <ul>
+                <a href="../index.html"><img class="logo" src="../img/logo2.png" alt="logo-bicicleta"></a>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="acercaDe.html">AcercaDe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-contacto">
+        <div class="contenedor__formulario">
+            <div class="formulario">
+                <form action="#">
+                    <u>
+                        <legend>Formulario de contacto:</legend>
+                    </u> <br>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <br><br>
+                    <p>Que bicicleta es tu favorita?</p>
+                    <select name="bici" id="bici">
+                        <!--Agrego esta opcion para que no arranque una opcion ya puesta-->
+                        <option value=""></option>
+                        <option value="mtb">MTB</option>
+                        <option value="playera">Playera</option>
+                        <option value="urbana">Urbana</option>
+                        <option value="carretera">Carretera</option>
+                    </select>
+                    <br><br>
+                    <div>¿Queres recibir informacion sobre nosotros?
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+                    <br>
+                    <div class="formulario__boton">
+                        <input class="boton" type="reset" value="Limpiar formulario">
+                        <input class="boton" type="submit" value="Enviar formulario">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__texto centrado">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, impedit?</p>
+        </div>
+        <div class="footer__iconos-contacto">
+            <a href="index.html"><img class="logo" src="../img/logo2.png" alt="logo-bicicleta"></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="./contacto.html"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f955c68031.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
