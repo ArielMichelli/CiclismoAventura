@@ -311,13 +311,16 @@ footer {
 }
 
 .contenedor__formulario {
+    width: 60%;
     align-self: center;
 }
 
 .formulario {
+
+    min-height: 400px;
     color: whitesmoke;
     background-color: rgba(36, 185, 196, 0.4);
-    border-radius: 100px;
+    border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
@@ -325,6 +328,11 @@ footer {
 .formulario form {
     font-size: 1.3rem;
     text-align: center;
+    padding: 20px;
+}
+
+.form-group row {
+    margin-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -337,11 +345,7 @@ footer {
     .formulario form {
         width: 100%;
         height: 50vh;
-        font-size: 0.7rem;
-    }
-
-    .formulario__boton {
-        display: block;
+        font-size: 0.8rem;
     }
 
     .boton {
