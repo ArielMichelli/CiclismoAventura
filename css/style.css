@@ -38,7 +38,7 @@ a {
 .navbar {
     width: 100%;
     padding: 20px;
-}
+} 
 
 .navbar a {
     color: white;
@@ -367,47 +367,22 @@ footer {
     }
 }
 
-
 /* ========================Decoracion Galeria======================== */
-.galeria__fotos {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-}
 
 .galeria__fotos img {
     width: 100%;
-    height: 100%;
-    max-height: 400px;
+    height: 450px;
     object-fit: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     transition-duration: .5s;
 }
 
+.galeria__fotos .col-lg-4 {
+    padding: 20px;
+}
+
 .galeria__fotos img:hover {
     border-radius: 20px;
-    border: solid rgba(36, 185, 196, 0.7) 3px;
+    border: solid rgb(0, 10, 200) 2px;
     filter: brightness(1.2);
-}
-
-@media (max-width: 1200px) {
-    .galeria__fotos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .galeria__fotos-destacada {
-        grid-column: 1/3;
-    }
-}
-
-@media (max-width: 480px) {
-    .galeria__fotos {
-        display: block;
-    }
-
-    .galeria__fotos img {
-        margin: 10px auto;
-    }
 }
