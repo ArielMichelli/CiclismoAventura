@@ -18,6 +18,11 @@ a {
 .centrado-fila {
     justify-content: center;
 }
+.centrado-objeto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 /* ========================Decoracion Index======================== */
 .portada {
@@ -80,7 +85,7 @@ a {
 }
 
 /* --------Galeria en Main-------- */
-.main-index{
+.main-index {
     background-color: rgba(0, 0, 0, 0.225);
 }
 
@@ -143,50 +148,6 @@ a {
 .boton a {
     color: black;
 }
-
-/* --------aside INFORMACION en index-------- */
-.informacion {
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    border: dotted black 2px;
-    transition-duration: 1.5s;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-.informacion img {
-    width: 100%;
-    padding: 5px;
-}
-
-.informacion__parrafo {
-    padding: 10px;
-}
-
-.informacion:hover {
-    transform: scale(1.05);
-    background-color: rgba(172, 255, 50, 0.6);
-}
-
-/* @media(max-width:500px) {
-    .informacion {
-        margin: 15px;
-    }
-
-    .informacion__parrafo {
-        font-size: 0.8rem;
-    }
-
-    .informacion__titulo {
-        font-size: 1rem;
-        margin: 1px;
-    }
-
-    .informacion img {
-        padding: 15px;
-    }
-} */
 
 /* ------------Footer--------------- */
 footer {
