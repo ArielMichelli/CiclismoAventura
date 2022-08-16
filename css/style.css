@@ -15,7 +15,7 @@ a {
 }
 
 /*Centrado de fila para Boostrap.*/
-.row {
+.centrado-fila {
     justify-content: center;
 }
 
@@ -371,7 +371,7 @@ footer {
     transition-duration: .5s;
 }
 
-.galeria__fotos .col-lg-4 {
+.galeria__fotos .col-xl-4 {
     padding: 20px;
 }
 
