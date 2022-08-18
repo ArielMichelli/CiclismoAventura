@@ -23,6 +23,10 @@ a {
     justify-content: center;
     text-align: center;
 }
+/*copyright*/
+.copyright{
+    font-size: 0.8rem;
+}
 
 /* ========================Decoracion Index======================== */
 .portada {
@@ -53,6 +57,7 @@ a {
 .navbar li {
     list-style: none;
     padding: 10px;
+    margin: 0 10px;
 }
 
 .navbar a:hover {
@@ -86,7 +91,7 @@ a {
 
 /* --------Galeria en Main-------- */
 .main-index {
-    background-color: rgba(0, 0, 0, 0.225);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .galeria__tarjeta {
@@ -135,6 +140,7 @@ a {
 .galeria__tarjeta:hover {
     transform: scale(1.010);
     filter: grayscale(80%);
+    border: solid white 4px;
 }
 
 /* ----Decorado boton----*/
