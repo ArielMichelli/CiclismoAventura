@@ -1,0 +1,57 @@
+/* ========================Decoracion Contacto======================== */
+.main-contacto {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    place-content: center;
+    background-image: url("../img/fondo-cotacto.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .contenedor__formulario {
+        width: 60%;
+        height: auto;
+        max-width: 1000px;
+        margin: 40px;
+        align-self: center;
+    }
+
+    .formulario {
+        min-height: 400px;
+        color: whitesmoke;
+        background-color: rgba(36, 185, 196, 0.4);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+        @media(max-width:500px) {
+            color: black;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.329);
+        }
+    }
+}
+
+.formulario form {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 50px;
+}
+
+@media(max-width:500px) {
+
+    .formulario form {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .boton {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 5px;
+        margin: 10px auto;
+    }
+}

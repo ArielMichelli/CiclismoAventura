@@ -1,0 +1,31 @@
+/*Reseteo del css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid red 1px;   */
+}
+
+body {
+    font-family: 'Koulen', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Centrado de fila para Boostrap.*/
+.centrado-fila {
+    justify-content: center;
+}
+
+.centrado-objeto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*copyright*/
+.copyright {
+    font-size: 0.8rem;
+}

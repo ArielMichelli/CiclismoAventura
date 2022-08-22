@@ -1,0 +1,14 @@
+$color-primario: #ff0000;
+$color-secundario: #662468;
+$tipografia-principal: Monserrat, sans-serif;
+
+$color-primario: #ff0000;
+$color-secundario: #662468;
+$tipografia-principal: Monserrat, sans-serif;
+
+$breakpoints: (
+    'sm': (min-width:600px),
+    'm': (min-width: 800px),
+    'l': (min-width: 1000px),
+    'xl': (min-width: 1200px),
+);
