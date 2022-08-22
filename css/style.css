@@ -214,7 +214,7 @@ a {
     height: 450px;
     object-fit: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    transition-duration: 0.5s;
+    transition-duration: 0.7s;
 }
 
 .galeria__fotos .col-xl-4 {
@@ -223,7 +223,7 @@ a {
 
 .galeria__fotos img:hover {
     border-radius: 20px;
-    border: solid rgb(0, 10, 200) 2px;
+    border: solid rgb(0, 193, 200) 1px;
     filter: brightness(1.2);
 }
 
@@ -305,7 +305,7 @@ footer {
     color: aliceblue;
     margin: 0 20px;
     font-size: 30px;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
 }
 
 .footer__iconos-contacto i:hover {
