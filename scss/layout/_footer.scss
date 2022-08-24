@@ -17,12 +17,12 @@ footer {
         margin: 0 20px;
         font-size: 30px;
         transition-duration: 1s;
-    }
-}
 
-.footer__iconos-contacto i:hover {
-    color: greenyellow;
-    transform: scale(1.3);
+        &:hover {
+            color: greenyellow;
+            transform: scale(1.3);
+        }
+    }
 }
 
 @media(max-width:600px) {

@@ -12,22 +12,23 @@
 .navbar {
     width: 100%;
     padding: 20px;
-}
 
-.navbar a {
-    color: white;
-    font-size: 1.5rem;
-}
+    li {
+        list-style: none;
+        padding: 10px;
+        margin: 0 10px;
+    }
 
-.navbar li {
-    list-style: none;
-    padding: 10px;
-    margin: 0 10px;
-}
+    a {
+        color: white;
+        font-size: 1.5rem;
 
-.navbar a:hover {
-    text-decoration: underline;
-    transform: scale(1.4);
+        &:hover {
+            text-decoration: underline;
+            transform: scale(1.4);
+            // color: aqua !important
+        }
+    }
 }
 
 /* --------Galeria en Main-------- */
@@ -41,18 +42,24 @@
     position: relative;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     transition-duration: 1s;
-}
 
-.galeria__tarjeta__imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    &__imagen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.galeria__tarjeta__texto {
-    position: absolute;
-    color: aliceblue;
-    font-size: 1.7rem;
+    &__texto {
+        position: absolute;
+        color: aliceblue;
+        font-size: 1.7rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        filter: grayscale(80%);
+        border: solid white 4px;
+    }
 }
 
 /*Para centrar el titulo sobre la imagen de la galeria-index*/
@@ -66,20 +73,14 @@
     display: flex;
     justify-content: center;
     transition-duration: 2s;
-}
 
-.galeria__boton .boton {
-    padding: 15px;
-    transition-duration: 2s;
-}
+    .boton {
+        padding: 15px;
+        transition-duration: 2s;
 
-.galeria__boton .boton:hover {
-    background-color: rgba(172, 255, 50, 0.6);
-    transform: scale(1.2);
-}
-
-.galeria__tarjeta:hover {
-    transform: scale(1.010);
-    filter: grayscale(80%);
-    border: solid white 4px;
+        &:hover {
+            background-color: rgba(172, 255, 50, 0.6);
+            transform: scale(1.2);
+        }
+    }
 }

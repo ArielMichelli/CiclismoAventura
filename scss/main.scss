@@ -1,14 +1,14 @@
 @import "./utils/variables";
-@import "./base/reset";
-@import "./components/cosas";
+@import "./utils/mixin";
 
-@import "./pages/index";
-@import "./pages/sucursales";
-@import "./pages/nosotros";
-@import "./pages/galeria";
+@import "./base/reset";
+
+@import "./components/elementos";
+
 @import "./pages/contacto";
+@import "./pages/galeria";
+@import "./pages/index";
+@import "./pages/nosotros";
+@import "./pages/sucursales";
 
 @import "./layout/footer";
-
-
-
