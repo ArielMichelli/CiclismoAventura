@@ -20,8 +20,8 @@ a {
 }
 
 .centrado-objeto {
+    @extend .centrado-fila;
     display: flex;
-    justify-content: center;
     text-align: center;
 }
 

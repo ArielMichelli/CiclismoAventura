@@ -2,11 +2,11 @@
 .sucursal {
     display: flex;
     height: 450px;
-    margin: 20px;
+    @include cajota(20px);
     border: solid black 1px;
     border-radius: 40px;
-    background-color: rgba(0, 200, 200, 0.125);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    background-color: rgba(40, 185, 196, 0.125);
+    box-shadow: $sombra;
 }
 
 .sucursal__mapa {

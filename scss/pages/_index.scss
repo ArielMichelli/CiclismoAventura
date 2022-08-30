@@ -3,15 +3,12 @@
     width: 100%;
     height: 90vh;
     background-image: url("../img/portada2.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
+    @include fondo();
 }
 
 .navbar {
     width: 100%;
-    padding: 20px;
+    @include cajota(0, 7px);
 
     li {
         list-style: none;
@@ -26,21 +23,20 @@
         &:hover {
             text-decoration: underline;
             transform: scale(1.4);
-            // color: aqua !important
         }
     }
 }
 
 /* --------Galeria en Main-------- */
 .main-index {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: map-get($colores, "gris");
 }
 
 .galeria__tarjeta {
     margin: 10px;
     border: solid black 1px;
     position: relative;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: $sombra;
     transition-duration: 1s;
 
     &__imagen {
@@ -76,10 +72,11 @@
 
     .boton {
         padding: 15px;
-        transition-duration: 2s;
+        transition-duration: 1s;
 
         &:hover {
-            background-color: rgba(172, 255, 50, 0.6);
+            background-color: map-get($colores, "verde");
+            // background-color: rgba(172, 255, 50, 0.6);
             transform: scale(1.2);
         }
     }

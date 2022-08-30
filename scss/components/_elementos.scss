@@ -23,8 +23,7 @@
 
 /* ----Decorado boton----*/
 .boton {
-    margin: 25px;
-    padding: 15px;
+    @include cajota(20px,10px);
     font-size: 1.2rem;
     border-radius: 20px;
 }

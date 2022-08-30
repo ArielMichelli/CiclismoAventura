@@ -15,13 +15,12 @@ a {
 }
 
 /*Centrado de fila para Boostrap.*/
-.centrado-fila {
+.centrado-fila, .centrado-objeto {
   justify-content: center;
 }
 
 .centrado-objeto {
   display: flex;
-  justify-content: center;
   text-align: center;
 }
 
@@ -55,8 +54,8 @@ a {
 
 /* ----Decorado boton----*/
 .boton {
-  margin: 25px;
-  padding: 15px;
+  margin: 20px;
+  padding: 10px;
   font-size: 1.2rem;
   border-radius: 20px;
 }
@@ -88,7 +87,7 @@ a {
 .main-contacto .formulario {
   min-height: 400px;
   color: whitesmoke;
-  background-color: rgba(36, 185, 196, 0.4);
+  background-color: rgba(40, 185, 196, 0.4);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -151,7 +150,8 @@ a {
 
 .navbar {
   width: 100%;
-  padding: 20px;
+  margin: 0;
+  padding: 7px;
 }
 .navbar li {
   list-style: none;
@@ -209,7 +209,7 @@ a {
 }
 .galeria__boton .boton {
   padding: 15px;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 .galeria__boton .boton:hover {
   background-color: rgba(172, 255, 50, 0.6);
@@ -218,8 +218,8 @@ a {
 
 /* ========================Decoracion Nosotros======================== */
 .contenedor__img {
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 0;
 }
 
 .contenedor__img img {
@@ -231,7 +231,7 @@ a {
 
 .contenedor__texto {
   margin: 20px;
-  padding: 20px;
+  padding: 30px;
   background: linear-gradient(to bottom, rgba(199, 199, 89, 0.1), rgba(36, 185, 196, 0.1));
   border: solid black 1px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -242,9 +242,10 @@ a {
   display: flex;
   height: 450px;
   margin: 20px;
+  padding: 0;
   border: solid black 1px;
   border-radius: 40px;
-  background-color: rgba(0, 200, 200, 0.125);
+  background-color: rgba(40, 185, 196, 0.125);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
