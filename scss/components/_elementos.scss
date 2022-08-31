@@ -23,11 +23,64 @@
 
 /* ----Decorado boton----*/
 .boton {
-    @include cajota(20px,10px);
+    @include cajota(20px, 10px);
     font-size: 1.2rem;
     border-radius: 20px;
 }
 
 .boton a {
     color: black;
+}
+
+/* --------boton de la galeria en el index--------*/
+.boton__especial {
+    width: 300px;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.2);
+    border: solid aqua 2px;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    transition: 1s;
+    cursor: pointer;
+
+    a {
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    &:hover {
+        background-color: aqua;
+
+        a {
+            color: black;
+        }
+    }
+
+    @include tablet {
+        width: 70%;
+
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include movil {
+        width: 90%;
+
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.colorinche {
+    // background: linear-gradient(16deg, rgba(159, 113, 51, 1) 0%, rgba(142, 191, 182, 1) 100%);
+    // background: linear-gradient(16deg, rgba(166,128,83,1) 0%, rgba(143,191,186,1) 60%, rgba(223,237,242,1) 100%);
+    background: linear-gradient(16deg, rgba(166, 128, 83, 1) 0%, rgba(143, 191, 186, 1) 100%);
 }

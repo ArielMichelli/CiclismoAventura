@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
 /*Reseteo del css*/
 * {
   margin: 0;
@@ -7,7 +8,15 @@
 }
 
 body {
-  font-family: "Koulen", cursive;
+  font-family: "Tajawal", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 500;
 }
 
 a {
@@ -62,6 +71,54 @@ a {
 
 .boton a {
   color: black;
+}
+
+/* --------boton de la galeria en el index--------*/
+.boton__especial {
+  width: 300px;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.2);
+  border: solid aqua 2px;
+  border-radius: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  transition: 1s;
+  cursor: pointer;
+}
+.boton__especial a {
+  color: white;
+  font-size: 1.3rem;
+}
+.boton__especial:hover {
+  background-color: aqua;
+}
+.boton__especial:hover a {
+  color: black;
+}
+@media (max-width: 768px) {
+  .boton__especial {
+    width: 70%;
+  }
+  .boton__especial a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .boton__especial {
+    width: 90%;
+  }
+  .boton__especial a {
+    font-size: 1rem;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.colorinche {
+  background: linear-gradient(16deg, rgb(166, 128, 83) 0%, rgb(143, 191, 186) 100%);
 }
 
 /* ========================Decoracion Contacto======================== */
