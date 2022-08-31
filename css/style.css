@@ -308,7 +308,7 @@ a {
 
 /* ========================Decoracion Sucursales======================== */
 .main-sucursales {
-  padding: 10px;
+  padding: 1px;
   background-color: rgba(166, 129, 83, 0.8352941176);
 }
 
@@ -321,7 +321,7 @@ a {
   .contenedor__sucursales {
     display: block;
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
   }
 }
 
@@ -339,16 +339,19 @@ a {
     display: block;
     text-align: center;
     border: 2px solid black;
+    margin: 20px 0px;
   }
 }
 .sucursal__mapa {
   width: 100%;
   height: auto;
+  padding: 5px;
   clip-path: circle(50% at 50% 50%);
 }
 @media (max-width: 768px) {
   .sucursal__mapa {
     padding: 10px;
+    height: 50%;
   }
 }
 .sucursal__texto {
