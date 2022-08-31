@@ -1,18 +1,25 @@
 /* ========================Decoracion Sucursales======================== */
+.main-sucursales{
+    padding: 10px;
+    background-color: #a6815384;
+}
 .sucursal {
     display: flex;
     height: 450px;
     @include cajota(20px);
-    border: solid black 1px;
-    border-radius: 40px;
-    background-color: rgba(40, 185, 196, 0.125);
+    border-radius: 10px;
+    background-color: rgba(50, 200, 200, 0.4);
     box-shadow: $sombra;
+    @media (max-width:1200px){
+        width: 100%;
+        @include cajota(20px,20px)
+    }
 }
 
 .sucursal__mapa {
     width: 70%;
     height: auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 .sucursal__texto {
@@ -22,12 +29,15 @@
 }
 
 @media(max-width:500px) {
+
     .sucursal__mapa {
-        padding: 20px;
         width: 60%;
+        padding: 20px;
+        
     }
 
     .sucursal__texto {
+        width: 40%;
         font-size: 0.7rem;
         border: solid black 1px;
         margin: 10px;

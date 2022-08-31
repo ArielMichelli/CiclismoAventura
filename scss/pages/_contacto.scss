@@ -9,11 +9,16 @@
     @include fondo();
 
     .contenedor__formulario {
-        width: 60%;
+        width: 70%;
         height: auto;
         max-width: 1000px;
-        margin: 40px;
+        margin: 30px;
         align-self: center;
+
+        @media(max-width:550px) {
+            width: 100%;
+            margin: 10px;
+        }
     }
 
     .formulario {
@@ -24,31 +29,34 @@
         padding: 20px;
         box-shadow: $sombra;
 
-        @media(max-width:500px) {
+        @media(max-width:550px) {
+            width: 100%;
             color: black;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.329);
+            background-color: rgba(255, 255, 255, 0.4);
         }
     }
 }
 
 .formulario form {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 50px;
-}
+    padding: 15px;
 
-@media(max-width:500px) {
+    @media(max-width:550px) {
 
-    .formulario form {
-        width: 100%;
-        font-size: 0.8rem;
-    }
+        .formulario form {
+            width: 100%;
+            font-size: 1rem;
+        }
 
-    .boton {
-        width: 100%;
-        font-size: 0.95rem;
-        padding: 5px;
-        margin: 10px auto;
+        .boton {
+            width: 100%;
+            font-size: 1.1rem;
+            padding: 5px;
+            margin: 10px auto;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
     }
 }

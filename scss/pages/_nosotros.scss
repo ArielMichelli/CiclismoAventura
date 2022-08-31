@@ -2,6 +2,10 @@
 
 .contenedor__img {
     @include cajota(20px);
+
+    @media(max-width:768px) {
+        padding: 10px;
+    }
 }
 
 .contenedor__img img {
@@ -12,8 +16,12 @@
 }
 
 .contenedor__texto {
-    @include cajota(20px,30px);
+    @include cajota(20px, 30px);
     background: linear-gradient(to bottom, rgba(199, 199, 89, 0.1), rgba(36, 185, 196, 0.1));
     border: solid black 1px;
     box-shadow: $sombra;
+
+    @media(max-width:768px) {
+        @include cajota(10px, 15px);
+    }
 }
