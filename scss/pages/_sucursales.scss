@@ -1,45 +1,55 @@
 /* ========================Decoracion Sucursales======================== */
-.main-sucursales{
+.main-sucursales {
     padding: 10px;
-    background-color: #a6815384;
+    background-color: #a68153d5;
 }
+
+.contenedor__sucursales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media (max-width:1200px) {
+        display: block;
+        @include cajota(20px, 20px)
+    }
+
+}
+
 .sucursal {
     display: flex;
-    height: 450px;
+    height: 500px;
     @include cajota(20px);
     border-radius: 10px;
     background-color: rgba(50, 200, 200, 0.4);
     box-shadow: $sombra;
-    @media (max-width:1200px){
+
+    @media (max-width:768px) {
+        display: block;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    &__mapa {
         width: 100%;
-        @include cajota(20px,20px)
-    }
-}
-
-.sucursal__mapa {
-    width: 70%;
-    height: auto;
-    padding: 20px;
-}
-
-.sucursal__texto {
-    padding: 10px;
-    margin-left: 20px;
-    align-self: center;
-}
-
-@media(max-width:500px) {
-
-    .sucursal__mapa {
-        width: 60%;
-        padding: 20px;
-        
+        height: auto;
+        clip-path: circle(50% at 50% 50%);
+        @media(max-width:768px) {
+            padding: 10px;
+        }
     }
 
-    .sucursal__texto {
-        width: 40%;
-        font-size: 0.7rem;
-        border: solid black 1px;
-        margin: 10px;
+    &__texto {
+        padding: 10px;
+        margin-left: 20px;
+        align-self: center;
+
+        @media(max-width:768px) {
+            width: 100%;
+            font-size: 1rem;
+            border-bottom: solid black 2px;
+            margin: 10px auto;
+        }
     }
+
 }
