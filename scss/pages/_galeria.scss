@@ -2,7 +2,8 @@
 
 .galeria__fotos img {
     width: 100%;
-    height: 450px;
+    height: auto;
+    max-height: 400px;
     object-fit: cover;
     box-shadow: $sombra;
     transition-duration: 0.7s;
