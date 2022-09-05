@@ -19,12 +19,25 @@
 /* --------Decoracion del carrusel--------*/
 .carousel-inner img {
     width: 100%;
-    max-height: 1100px;
-    object-fit: fill;
+    height: 100vh;
+    object-fit: cover;
+
+    @include tablet {
+        height: 70vh;
+    }
+
+    @include movil {
+        height: 50vh;
+    }
 }
 
 .carousel-inner {
     height: 100%;
+}
+
+.titulo-carrusel {
+    font-size: 1.5rem;
+    margin: 5px;
 }
 
 /* ----Decorado boton----*/

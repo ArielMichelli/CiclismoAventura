@@ -58,12 +58,27 @@ a {
 /* --------Decoracion del carrusel--------*/
 .carousel-inner img {
   width: 100%;
-  max-height: 1100px;
-  object-fit: fill;
+  height: 100vh;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 70vh;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-inner img {
+    height: 50vh;
+  }
 }
 
 .carousel-inner {
   height: 100%;
+}
+
+.titulo-carrusel {
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 /* ----Decorado boton----*/
@@ -209,16 +224,6 @@ a {
 }
 
 /* ========================Decoracion Index======================== */
-.portada {
-  width: 100%;
-  height: 90vh;
-  background-image: url("../img/portada.webp");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .navbar {
   width: 100%;
   margin: 0;
