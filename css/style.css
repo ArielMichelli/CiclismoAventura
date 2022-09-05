@@ -243,6 +243,10 @@ a {
   transform: scale(1.4);
 }
 
+.navbar-dark .navbar-nav .nav-link.active {
+  color: rgba(0, 255, 255, 0.8);
+}
+
 /* --------Galeria en Main-------- */
 .main-index {
   padding: 10px;
