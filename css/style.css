@@ -250,34 +250,74 @@ a {
 /* --------Galeria en Main-------- */
 .main-index {
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(115, 139, 187, 0.4235294118);
 }
 
-.galeria__tarjeta {
-  margin: 10px;
-  border: solid black 1px;
-  position: relative;
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  transition-duration: 1s;
+.contenedor-tarjetas {
+  display: grid;
+  max-width: 80%;
+  margin: 20px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
 }
-.galeria__tarjeta__imagen {
+@media (max-width: 768px) {
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    gap: 0px;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-tarjetas {
+    display: block;
+  }
+}
+.contenedor-tarjetas .tarjeta {
+  width: 100%;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+.contenedor-tarjetas .tarjeta :hover {
+  filter: brightness(1.1);
+  transform: scale(1.0125);
+}
+.contenedor-tarjetas .tarjeta__imagen {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.contenedor-tarjetas .tarjeta__imagen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.galeria__tarjeta__texto {
+.contenedor-tarjetas .tarjeta__texto {
   position: absolute;
-  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.galeria__tarjeta:hover {
-  transform: scale(1.1);
-  filter: grayscale(80%);
-  border: solid white 4px;
+.contenedor-tarjetas .tarjeta__texto h3 {
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  padding: 5px;
+}
+@media (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta__texto h3 {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.ancho {
+  grid-column: span 2;
 }
 
 /*Para centrar el texto sobre la imagen de la galeria-index*/
 .texto-flotante-centrado {
-  font-size: 2rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

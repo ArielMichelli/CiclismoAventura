@@ -31,37 +31,76 @@
 /* --------Galeria en Main-------- */
 .main-index {
     padding: 10px;
-    background-color: map-get($colores, "gris");
+    background-color: map-get($colores, "azulado");
 }
 
-.galeria__tarjeta {
-    margin: 10px;
-    border: solid black 1px;
-    position: relative;
-    box-shadow: $sombra;
-    transition-duration: 1s;
+.contenedor-tarjetas {
+    display: grid;
+    max-width: 80%;
+    margin: 20px auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
 
-    &__imagen {
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        gap: 0px;
+        margin: 10px auto;
+    }
+
+    @include movil {
+        display: block;
+    }
+
+    .tarjeta {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+        height: 350px;
+        @include cajota(10px, 10px);
+        position: relative;
 
-    &__texto {
-        position: absolute;
-        color: aliceblue;
-    }
+        :hover {
+            filter: brightness(1.1);
+            transform: scale(1.0125);
+        }
 
-    &:hover {
-        transform: scale(1.1);
-        filter: grayscale(80%);
-        border: solid white 4px;
+        &__imagen {
+            width: 100%;
+            height: 100%;
+            box-shadow: $sombra;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__texto {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+
+            h3 {
+                font-size: 2.5rem;
+                background-color: rgba(255, 255, 255, 0.2);
+                color: black;
+                padding: 5px;
+
+                @include desktop {
+                    font-size: 1.5rem;
+                    background-color: rgba(255, 255, 255, 0.4);
+                }
+            }
+        }
     }
+}
+
+.ancho {
+    grid-column: span 2;
 }
 
 /*Para centrar el texto sobre la imagen de la galeria-index*/
 .texto-flotante-centrado {
-    font-size: 2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
