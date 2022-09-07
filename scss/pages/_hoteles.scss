@@ -1,0 +1,108 @@
+/* ========================Decoracion Galeria======================== */
+
+.galeria__fotos img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: $sombra;
+    transition-duration: 0.7s;
+}
+
+.galeria__fotos .col-xl-4 {
+    padding: 20px;
+}
+
+.galeria__fotos img:hover {
+    border-radius: 20px;
+    border: solid map-get($colores, "aqua") 1px;
+    filter: brightness(1.2);
+}
+
+* {
+    border: solid red 0;
+}
+
+.contenedor-hoteles {
+    max-width: 50%;
+    margin: 10px auto;
+
+    @include tablet {
+        max-width: 80%;
+        ;
+    }
+
+    @include movil {
+        max-width: 95%;
+        ;
+    }
+
+    .tarjeta__hotel {
+        height: 300px;
+        display: flex;
+        gap: 20px;
+        @include cajota(20px, 5px);
+        border: solid black 1px;
+        border-radius: 10px;
+        box-shadow: $sombra;
+
+        &__img {
+            width: 35%;
+            height: 100%;
+
+            @include desktop {
+                width: 50%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                object-fit: cover;
+            }
+        }
+
+        &__texto {
+            margin-left: 20px;
+
+            @include movil {
+                margin-left: 5px;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.estrellas {
+    color: rgb(255, 200, 0);
+    font-size: 1.2rem;
+}
+
+.puntaje {
+    background-color: rgb(56, 121, 56);
+    border-radius: 10px;
+    padding: 2px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    margin-right: 5px;
+}
+
+.boton-reserva {
+    margin-top: 30px;
+
+    a {
+        background-color: rgba(70, 150, 70);
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        margin: 5px auto;
+        padding: 7px;
+    }
+}

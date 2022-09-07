@@ -105,14 +105,15 @@ a {
   cursor: pointer;
 }
 .boton__especial a {
-  color: white;
+  color: black;
+  font-weight: 800;
   font-size: 1.3rem;
 }
 .boton__especial:hover {
   background-color: aqua;
 }
 .boton__especial:hover a {
-  color: black;
+  color: green;
 }
 @media (max-width: 768px) {
   .boton__especial {
@@ -223,6 +224,91 @@ a {
   filter: brightness(1.2);
 }
 
+* {
+  border: solid red 0;
+}
+
+.contenedor-hoteles {
+  max-width: 50%;
+  margin: 10px auto;
+}
+@media (max-width: 768px) {
+  .contenedor-hoteles {
+    max-width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-hoteles {
+    max-width: 95%;
+  }
+}
+.contenedor-hoteles .tarjeta__hotel {
+  height: 300px;
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+  padding: 5px;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.contenedor-hoteles .tarjeta__hotel__img {
+  width: 35%;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .contenedor-hoteles .tarjeta__hotel__img {
+    width: 50%;
+  }
+}
+.contenedor-hoteles .tarjeta__hotel__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.contenedor-hoteles .tarjeta__hotel__texto {
+  margin-left: 20px;
+}
+@media (max-width: 576px) {
+  .contenedor-hoteles .tarjeta__hotel__texto {
+    margin-left: 5px;
+  }
+}
+.contenedor-hoteles .tarjeta__hotel__texto h2 {
+  margin-bottom: 20px;
+}
+
+.estrellas {
+  color: rgb(255, 200, 0);
+  font-size: 1.2rem;
+}
+
+.puntaje {
+  background-color: rgb(56, 121, 56);
+  border-radius: 10px;
+  padding: 2px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  margin-right: 5px;
+}
+
+.boton-reserva {
+  margin-top: 30px;
+}
+.boton-reserva a {
+  background-color: rgb(70, 150, 70);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 5px auto;
+  padding: 7px;
+}
+
 /* ========================Decoracion Index======================== */
 .navbar {
   width: 100%;
@@ -259,31 +345,36 @@ a {
   margin: 20px auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 @media (max-width: 768px) {
   .contenedor-tarjetas {
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
-    gap: 0px;
+    gap: 20px;
     margin: 10px auto;
   }
 }
 @media (max-width: 576px) {
   .contenedor-tarjetas {
     display: block;
+    margin-bottom: 10px;
   }
 }
 .contenedor-tarjetas .tarjeta {
   width: 100%;
   height: 350px;
-  margin: 10px;
-  padding: 10px;
   position: relative;
 }
 .contenedor-tarjetas .tarjeta :hover {
   filter: brightness(1.1);
   transform: scale(1.0125);
+}
+@media (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta {
+    margin-bottom: 15px;
+    max-height: 250px;
+  }
 }
 .contenedor-tarjetas .tarjeta__imagen {
   width: 100%;
@@ -314,6 +405,17 @@ a {
 
 .ancho {
   grid-column: span 2;
+}
+
+.titulo {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .titulo {
+    width: 90%;
+  }
 }
 
 /*Para centrar el texto sobre la imagen de la galeria-index*/
@@ -364,14 +466,15 @@ a {
 
 .contenedor__sucursales {
   display: grid;
+  max-width: 80%;
+  margin: 10px auto;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .contenedor__sucursales {
     display: block;
-    margin: 20px;
-    padding: 5px;
+    margin: 0 auto;
   }
 }
 
@@ -388,7 +491,7 @@ a {
   .sucursal {
     display: block;
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid white;
     margin: 20px 0px;
   }
 }
@@ -408,12 +511,16 @@ a {
   padding: 10px;
   margin-left: 20px;
   align-self: center;
+  border: solid 4px white;
+  margin: 10px;
+  padding: 10px;
 }
 @media (max-width: 768px) {
   .sucursal__texto {
     width: 100%;
     font-size: 1rem;
-    border-bottom: solid black 2px;
+    border: none;
+    border-bottom: solid white 2px;
     margin: 10px auto;
   }
 }
