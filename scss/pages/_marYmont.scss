@@ -19,6 +19,7 @@
     @include cajota(20px, 30px);
     background: linear-gradient(to bottom, rgba(199, 199, 89, 0.1), rgba(36, 185, 196, 0.1));
     border: solid black 1px;
+    font-size: 1.2rem;
     box-shadow: $sombra;
 
     @media(max-width:768px) {
