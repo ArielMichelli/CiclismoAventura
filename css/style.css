@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap");
 /*Reseteo del css*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: solid red 1px;   */
 }
 
 body {
@@ -53,6 +54,21 @@ a {
 .titulo {
   color: white;
   text-decoration: underline;
+  font-family: "Amatic SC", cursive;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .titulo {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .titulo {
+    padding: 5px;
+    margin: 5px auto;
+  }
 }
 
 /* --------Decoracion del carrusel--------*/
@@ -96,8 +112,8 @@ a {
 .boton__especial {
   width: 300px;
   text-align: center;
-  background-color: rgba(0, 255, 255, 0.2);
-  border: solid aqua 2px;
+  background-color: rgba(200, 50, 200, 0.1);
+  border: solid rgb(200, 50, 200) 2px;
   border-radius: 200px;
   padding: 10px;
   margin: 20px auto;
@@ -110,10 +126,10 @@ a {
   font-size: 1.3rem;
 }
 .boton__especial:hover {
-  background-color: aqua;
+  background-color: rgba(200, 50, 200, 0.8);
 }
 .boton__especial:hover a {
-  color: green;
+  color: white;
 }
 @media (max-width: 768px) {
   .boton__especial {
@@ -126,6 +142,7 @@ a {
 @media (max-width: 576px) {
   .boton__especial {
     width: 90%;
+    border-radius: 5px;
   }
   .boton__especial a {
     font-size: 1rem;
@@ -224,13 +241,9 @@ a {
   filter: brightness(1.2);
 }
 
-* {
-  border: solid red 0;
-}
-
 .contenedor-hoteles {
   max-width: 50%;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 @media (max-width: 768px) {
   .contenedor-hoteles {
@@ -252,8 +265,18 @@ a {
   border-radius: 10px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+@media (max-width: 1000px) {
+  .contenedor-hoteles .tarjeta__hotel {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-hoteles .tarjeta__hotel {
+    height: 400px;
+  }
+}
 .contenedor-hoteles .tarjeta__hotel__img {
-  width: 35%;
+  width: 40%;
   height: 100%;
 }
 @media (max-width: 1200px) {
@@ -268,6 +291,8 @@ a {
   object-fit: cover;
 }
 .contenedor-hoteles .tarjeta__hotel__texto {
+  width: 60%;
+  height: 100%;
   margin-left: 20px;
 }
 @media (max-width: 576px) {
@@ -276,7 +301,7 @@ a {
   }
 }
 .contenedor-hoteles .tarjeta__hotel__texto h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .estrellas {
@@ -295,7 +320,8 @@ a {
 }
 
 .boton-reserva {
-  margin-top: 30px;
+  display: flex;
+  margin-top: 10px;
 }
 .boton-reserva a {
   background-color: rgb(70, 150, 70);
@@ -304,9 +330,14 @@ a {
   text-align: center;
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 5px auto;
   padding: 7px;
+}
+@media (max-width: 576px) {
+  .boton-reserva {
+    font-size: 0.7rem;
+  }
 }
 
 /* ========================Decoracion Index======================== */
@@ -405,17 +436,6 @@ a {
 
 .ancho {
   grid-column: span 2;
-}
-
-.titulo {
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-}
-@media (max-width: 768px) {
-  .titulo {
-    width: 90%;
-  }
 }
 
 /*Para centrar el texto sobre la imagen de la galeria-index*/

@@ -19,13 +19,9 @@
     filter: brightness(1.2);
 }
 
-* {
-    border: solid red 0;
-}
-
 .contenedor-hoteles {
     max-width: 50%;
-    margin: 10px auto;
+    margin: 5px auto;
 
     @include tablet {
         max-width: 80%;
@@ -46,8 +42,16 @@
         border-radius: 10px;
         box-shadow: $sombra;
 
+        @media (max-width:1000px) {
+            height: 350px;
+        }
+
+        @include movil {
+            height: 400px;
+        }
+
         &__img {
-            width: 35%;
+            width: 40%;
             height: 100%;
 
             @include desktop {
@@ -63,6 +67,8 @@
         }
 
         &__texto {
+            width: 60%;
+            height: 100%;
             margin-left: 20px;
 
             @include movil {
@@ -70,7 +76,7 @@
             }
 
             h2 {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -92,7 +98,8 @@
 }
 
 .boton-reserva {
-    margin-top: 30px;
+    display: flex;
+    margin-top: 10px;
 
     a {
         background-color: rgba(70, 150, 70);
@@ -101,8 +108,16 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 5px auto;
         padding: 7px;
     }
+
+    @include movil {
+        font-size: 0.7rem;
+    }
 }
+
+// * {
+//     border: solid red 1px;
+// }

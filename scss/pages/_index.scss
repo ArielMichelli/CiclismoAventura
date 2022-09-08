@@ -63,6 +63,7 @@
             filter: brightness(1.1);
             transform: scale(1.0125);
         }
+
         @include movil {
             margin-bottom: 15px;
             max-height: 250px;
@@ -102,14 +103,7 @@
 .ancho {
     grid-column: span 2;
 }
-.titulo{
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    @include tablet {
-        width: 90%;
-    }
-}
+
 /*Para centrar el texto sobre la imagen de la galeria-index*/
 .texto-flotante-centrado {
     top: 50%;

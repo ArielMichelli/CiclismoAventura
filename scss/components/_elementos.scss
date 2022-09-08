@@ -14,6 +14,19 @@
     @extend .centrado;
     color: white;
     text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+
+    @include tablet {
+        width: 90%;
+    }
+
+    @include movil {
+        padding: 5px;
+        margin: 5px auto;
+    }
 }
 
 /* --------Decoracion del carrusel--------*/
@@ -54,8 +67,8 @@
 .boton__especial {
     width: 300px;
     text-align: center;
-    background-color: rgba(0, 255, 255, 0.2);
-    border: solid aqua 2px;
+    background-color: rgba(200, 50, 200, 0.1);
+    border: solid rgb(200, 50, 200) 2px;
     border-radius: 200px;
     padding: 10px;
     margin: 20px auto;
@@ -69,10 +82,10 @@
     }
 
     &:hover {
-        background-color: aqua;
+        background-color: rgba(200, 50, 200, 0.8);
 
         a {
-            color: green;
+            color: white;
         }
     }
 
@@ -86,6 +99,7 @@
 
     @include movil {
         width: 90%;
+        border-radius: 5px;
 
         a {
             font-size: 1rem;
@@ -99,7 +113,5 @@
 }
 
 .colorinche {
-    // background: linear-gradient(16deg, rgba(159, 113, 51, 1) 0%, rgba(142, 191, 182, 1) 100%);
-    // background: linear-gradient(16deg, rgba(166,128,83,1) 0%, rgba(143,191,186,1) 60%, rgba(223,237,242,1) 100%);
     background: linear-gradient(16deg, rgba(166, 128, 83, 1) 0%, rgba(143, 191, 186, 1) 100%);
 }
