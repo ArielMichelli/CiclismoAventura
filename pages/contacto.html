@@ -75,50 +75,102 @@
     </header>
 
     <main class="main-contacto">
-        <div class="contenedor__formulario">
-            <div class="formulario">
-                <form>
-                    <u>
-                        <h1 class="mb-4">Contacto:</h1>
-                    </u>
-                    <div class="form-group row centrado-fila">
-                        <label for="nombre" class="col-lg-2 col-form-label">Nombre:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control col-lg-4" id="nombre">
-                        </div>
-                    </div>
-                    <div class="form-group row centrado-fila">
-                        <label for="apellido" class="col-lg-2 col-form-label">Apellido:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="apellido">
-                        </div>
-                    </div>
-                    <div class="form-group row centrado-fila">
-                        <label for="email" class="col-lg-2 col-form-label">E-mail:</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                    </div>
-                    <div class="form-group row centrado-fila">
-                        <label for="mensaje" class="col-lg-2 col-form-label">Mensaje:</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row centrado-fila mt-5">
-                        <div class="col-8">¿Queres recibir información de nosotros?</div>
-                        <div class="col">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="grid-check">
+        <div class="contenedor-contacto">
+            <div class="contenedor__formulario__img">
+                <img src="../img/prueba.png" alt="png de personas en un hotel">
+            </div>
+            <div class="contenedor__formulario">
+                <div class="formulario">
+                    <form>
+                        <u>
+                            <h1 class="mb-4">Reservar Hotel:</h1>
+                        </u>
+                        <div class="form-group row centrado-fila mt-3">
+                            <label for="nombre" class="col-lg-4 col-form-label">Nombre y Apellido</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control col-lg-4" id="nombre">
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group row centrado-fila mt-3 mb-3">
-                        <div class="col-sm-10">
-                            <button type="submit" class="boton btn btn-primary">Enviar</button>
+                        <div class="form-group row centrado-fila mt-3">
+                            <label for="email" class="col-lg-4 col-form-label">E-mail:</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="email">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="container-fluid mt-5">
+                            <h2>Fechas:</h2>
+                        </div>
+                        <div class="form-group row centrado-fila mt-lg-4 ">
+                            <label for="ingreso" class="col-lg-2 col-form-label">Ingreso:</label>
+                            <div class="col-sm-6 col-md-4">
+                                <input type="text" class="form-control col-lg-4" id="ingreso">
+                            </div>
+                            <label for="ingreso" class="col-lg-2 col-form-label">Egreso:</label>
+                            <div class="col-sm-6 col-md-4">
+                                <input type="text" class="form-control col-lg-4" id="ingreso">
+                            </div>
+                        </div>
+                        <div class="container-fluid mt-3">
+                            <h2>Facturación:</h2>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="medio-pago">Medio de pago:</label>
+                            <select class="form-control col-sm-7" id="medio-pago">
+                                <option></option>
+                                <option>Visa</option>
+                                <option>American Express</option>
+                                <option>Mastercard</option>
+                                <option>Maestro</option>
+                            </select>
+                        </div>
+                        <div class="form-group row centrado-fila mt-3">
+                            <label for="tarjeta" class="col-lg-2 col-form-label">Nro. Tarjeta:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="tarjeta">
+                            </div>
+                        </div>
+                        <div class="form-group row centrado-fila">
+                            <label for="medio-pago">Fecha de expiración:</label>
+                            <select class="form-control  col-sm-7 col-xl-5" id="medio-pago">
+                                <option>Mes</option>
+                                <option>Enero</option>
+                                <option>Febrero</option>
+                                <option>Marzo</option>
+                                <option>Abril</option>
+                                <option>Mayo</option>
+                                <option>Junio</option>
+                                <option>Julio</option>
+                                <option>Agosto</option>
+                                <option>Septiembre</option>
+                                <option>Octubre</option>
+                                <option>Noviembre</option>
+                                <option>Diciembre</option>
+                            </select>
+                            <select class="form-control col-sm-7 mt-3" id="medio-pago">
+                                <option>Año</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                                <option>2029</option>
+                                <option>2030</option>
+                            </select>
+                        </div>
+                        <div class="form-group row centrado-fila mt-3 mb-3">
+                            <div class="col-sm-10">
+                                <button type="submit" class="boton btn btn-primary">RESERVAR</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

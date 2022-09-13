@@ -8,47 +8,77 @@
     background-image: url("../img/fondo-cotacto.webp");
     @include fondo();
 
-    .contenedor__formulario {
-        width: 70%;
-        height: auto;
-        max-width: 1000px;
-        margin: 30px;
-        align-self: center;
-
-        @media(max-width:550px) {
-            width: 100%;
-            margin: 10px;
-        }
-    }
-
-    .formulario {
-        min-height: 400px;
-        color: whitesmoke;
-        background-color: rgba(40, 185, 196, 0.4);
-        border-radius: 20px;
+    .contenedor-contacto {
+        display: flex;
+        border: solid 1px white;
+        background-color: rgba(255, 255, 255, 0.4);
         padding: 20px;
-        box-shadow: $sombra;
+        margin: auto 20px;
+        height: 100%;
 
-        @media(max-width:550px) {
-            width: 100%;
-            color: black;
+        h2 {
+            text-decoration: underline;
+            margin: 20px auto;
+        }
+
+        .contenedor__formulario__img {
+            width: 55%;
+
+            @media(max-width:1200px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @media(max-width:1200px) {
+            display: block;
+        }
+
+
+        .contenedor__formulario {
+            width: 45%;
+            height: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            align-self: center;
+
+            @media(max-width:950px) {
+                width: 80%;
+                margin: 10px auto;
+            }
+
+            @media(max-width:750px) {
+                width: 100%;
+            }
+        }
+
+        .formulario {
+            height: 100%;
+            min-height: 400px;
+            color: whitesmoke;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: $sombra;
+
+            @media(max-width:750px) {
+                color: black;
+                background-color: rgba(255, 255, 255, 0.4);
+            }
         }
     }
 }
 
 .formulario form {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     padding: 15px;
 
-    @media(max-width:550px) {
-
-        .formulario form {
-            width: 100%;
-            font-size: 1rem;
-        }
+    @media(max-width:750px) {
 
         .boton {
             width: 100%;

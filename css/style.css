@@ -171,46 +171,75 @@ a {
   background-size: cover;
   background-attachment: fixed;
 }
-.main-contacto .contenedor__formulario {
-  width: 70%;
-  height: auto;
-  max-width: 1000px;
-  margin: 30px;
-  align-self: center;
+.main-contacto .contenedor-contacto {
+  display: flex;
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  margin: auto 20px;
+  height: 100%;
 }
-@media (max-width: 550px) {
-  .main-contacto .contenedor__formulario {
+.main-contacto .contenedor-contacto h2 {
+  text-decoration: underline;
+  margin: 20px auto;
+}
+.main-contacto .contenedor-contacto .contenedor__formulario__img {
+  width: 55%;
+}
+@media (max-width: 1200px) {
+  .main-contacto .contenedor-contacto .contenedor__formulario__img {
     width: 100%;
-    margin: 10px;
   }
 }
-.main-contacto .formulario {
+.main-contacto .contenedor-contacto .contenedor__formulario__img img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .main-contacto .contenedor-contacto {
+    display: block;
+  }
+}
+.main-contacto .contenedor-contacto .contenedor__formulario {
+  width: 45%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  align-self: center;
+}
+@media (max-width: 950px) {
+  .main-contacto .contenedor-contacto .contenedor__formulario {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 750px) {
+  .main-contacto .contenedor-contacto .contenedor__formulario {
+    width: 100%;
+  }
+}
+.main-contacto .contenedor-contacto .formulario {
+  height: 100%;
   min-height: 400px;
   color: whitesmoke;
-  background-color: rgba(40, 185, 196, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-@media (max-width: 550px) {
-  .main-contacto .formulario {
-    width: 100%;
+@media (max-width: 750px) {
+  .main-contacto .contenedor-contacto .formulario {
     color: black;
-    padding: 20px;
     background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
 .formulario form {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   padding: 15px;
 }
-@media (max-width: 550px) {
-  .formulario form .formulario form {
-    width: 100%;
-    font-size: 1rem;
-  }
+@media (max-width: 750px) {
   .formulario form .boton {
     width: 100%;
     font-size: 1.1rem;
