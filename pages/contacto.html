@@ -80,7 +80,7 @@
                 <img src="../img/prueba.png" alt="png de personas en un hotel">
             </div>
             <div class="contenedor__formulario">
-                <div class="formulario">
+                <div class="formulario p-3">
                     <form>
                         <u>
                             <h1 class="mb-4">Reservar Hotel:</h1>
@@ -97,7 +97,7 @@
                                 <input type="email" class="form-control" id="email">
                             </div>
                         </div>
-                        <div class="container-fluid mt-5">
+                        <div class="container-fluid mt-3">
                             <h2>Fechas:</h2>
                         </div>
                         <div class="form-group row centrado-fila mt-lg-4 ">
@@ -114,9 +114,9 @@
                             <h2>Facturación:</h2>
                         </div>
 
-                        <div class="form-group">
-                            <label for="medio-pago">Medio de pago:</label>
-                            <select class="form-control col-sm-7" id="medio-pago">
+                        <div class="form-group row mt-3">
+                            <label class="col-lg-12 col-xl-4" for="medio-pago">Medio de pago:</label>
+                            <select class="form-control col" id="medio-pago">
                                 <option></option>
                                 <option>Visa</option>
                                 <option>American Express</option>
@@ -124,15 +124,17 @@
                                 <option>Maestro</option>
                             </select>
                         </div>
-                        <div class="form-group row centrado-fila mt-3">
-                            <label for="tarjeta" class="col-lg-2 col-form-label">Nro. Tarjeta:</label>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" id="tarjeta">
+
+                        <div class="form-group row mt-3">
+                            <label for="Nro-tarjeta" class="col-lg-12 col-xl-4 col-form-label">Nro. Tarjeta:</label>
+                            <div class="col">
+                                <input type="text" class="form-control" id="Nro-tarjeta">
                             </div>
                         </div>
-                        <div class="form-group row centrado-fila">
-                            <label for="medio-pago">Fecha de expiración:</label>
-                            <select class="form-control  col-sm-7 col-xl-5" id="medio-pago">
+
+                        <div class="form-group row mt-3">
+                            <label class="text-lg-start text-md-center" for="medio-pago">Fecha de expiración:</label>
+                            <select class="form-control col m-1" id="medio-pago">
                                 <option>Mes</option>
                                 <option>Enero</option>
                                 <option>Febrero</option>
@@ -147,7 +149,7 @@
                                 <option>Noviembre</option>
                                 <option>Diciembre</option>
                             </select>
-                            <select class="form-control col-sm-7 mt-3" id="medio-pago">
+                            <select class="form-control col m-1" id="medio-pago">
                                 <option>Año</option>
                                 <option>2018</option>
                                 <option>2019</option>
