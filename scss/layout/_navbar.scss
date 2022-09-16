@@ -1,0 +1,30 @@
+.navbar {
+    width: 100%;
+    @include cajota(0, 10px);
+
+    li {
+        list-style: none;
+        margin: 0 15px;
+    }
+
+    a {
+
+        &:hover {
+            text-decoration: wavy underline;
+            transform: scale(1.3);
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            font-size: 1.5rem;
+
+            &.active {
+                color: rgba(0, 255, 255, 0.8);
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,32 +1,4 @@
 /* ========================Decoracion Index======================== */
-.navbar {
-    width: 100%;
-    @include cajota(0, 7px);
-
-    li {
-        list-style: none;
-        padding: 10px;
-        margin: 0 10px;
-    }
-
-    a {
-        color: white;
-        font-size: 1.5rem;
-
-        &:hover {
-            text-decoration: underline;
-            transform: scale(1.4);
-        }
-    }
-}
-
-.navbar-dark {
-    .navbar-nav {
-        .nav-link.active {
-            color: rgba(0, 255, 255, 0.8);
-        }
-    }
-}
 
 /* --------Galeria en Main-------- */
 .main-index {

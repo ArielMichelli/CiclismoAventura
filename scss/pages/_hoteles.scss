@@ -41,6 +41,7 @@
         border: solid black 1px;
         border-radius: 10px;
         box-shadow: $sombra;
+        transition-duration: .7s;
 
         @media (max-width:1000px) {
             height: 350px;
@@ -48,6 +49,10 @@
 
         @include movil {
             height: 400px;
+        }
+        &:hover{
+            transform: scale(1.05);
+            border: solid rgba(70, 150, 70) 1px;
         }
 
         &__img {
