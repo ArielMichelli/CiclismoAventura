@@ -103,21 +103,21 @@
                         <div class="form-group row centrado-fila mt-lg-4 ">
                             <label for="ingreso" class="col-lg-2 col-form-label">Ingreso:</label>
                             <div class="col-sm-6 col-md-4">
-                                <input type="text" class="form-control col-lg-4" id="ingreso">
+                                <input type="date" class="form-control col-lg-4" id="ingreso">
                             </div>
                             <label for="ingreso" class="col-lg-2 col-form-label">Egreso:</label>
                             <div class="col-sm-6 col-md-4">
-                                <input type="text" class="form-control col-lg-4" id="ingreso">
+                                <input type="date" class="form-control col-lg-4" id="ingreso">
                             </div>
                         </div>
                         <div class="container-fluid mt-3">
                             <h2>Facturación:</h2>
                         </div>
 
-                        <div class="form-group row mt-3">
+                        <div class="form-group row mt-3 p-3">
                             <label class="col-lg-12 col-xl-4" for="medio-pago">Medio de pago:</label>
                             <select class="form-control col" id="medio-pago">
-                                <option></option>
+                                <option>Seleccione su método de pago</option>
                                 <option>Visa</option>
                                 <option>American Express</option>
                                 <option>Mastercard</option>
@@ -128,11 +128,12 @@
                         <div class="form-group row mt-3">
                             <label for="Nro-tarjeta" class="col-lg-12 col-xl-3 col-form-label">Nro. Tarjeta:</label>
                             <div class="col">
-                                <input type="text" class="form-control" id="Nro-tarjeta">
+                                <input type="number" class="form-control" id="Nro-tarjeta"
+                                    placeholder="xxxx-xxxx-xxxx-xxxx">
                             </div>
                             <label for="cod-seguridad" class="col-lg-12 col-xl-2 col-form-label">Código:</label>
                             <div class="col">
-                                <input type="text" class="form-control" id="cod-seguridad">
+                                <input type="number" class="form-control" id="cod-seguridad" placeholder="****">
                             </div>
                         </div>
 
